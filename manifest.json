@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Nalgeon Dev Agent Pro",
+  "version": "1.2",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["https://gemini.google.com/*"],
+      "js": ["jszip.js", "prism.js", "content.js"],
+      "css": ["prism.css", "styles.css"]
+    }
+  ]
+}
